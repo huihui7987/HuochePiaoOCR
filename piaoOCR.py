@@ -31,12 +31,12 @@ def get_text_from_image(image_data, app_id, app_key, app_secret, api_version=0, 
     options["language_type"] = "CHN_ENG"
     templateSign = "Nsdax2424asaAS791823112"
 
-    if api_version == 1:
-        result = client.basicAccurate(image_data, options)
-    else:
-        result = client.basicGeneral(image_data, options)
+    #if api_version == 1:
+    #    result = client.basicAccurate(image_data, options)
+    #else:
+    #    result = client.basicGeneral(image_data, options)
 
-    #result = client.custom(image_data, templateSign)#client.custom
+    result = client.custom(image_data, templateSign)#client.custom
 
 
 
